@@ -14,7 +14,15 @@
     <label for="kataLaluan">Create Password</label>
     <input type="password" id="kataLaluan">
 
+    <a onclick="sayHi()" href="https://www.metallica.com" target="_blank">Matelica</a>
 
+    <script>
+        function sayHi(){
+            event.preventDefault();
+            alert("Hi we stop the default event!")
+        }
+
+    </script>
     <script src="js/events.js"></script>
 </body>
 </html>
