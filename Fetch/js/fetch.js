@@ -22,13 +22,16 @@ let elLoadUser = document.getElementById("getRandomUser")
 elLoadUser.addEventListener("click", function(){
     loadUser()
 })
+// to get multiple user 
 
+// get the buttom and user number 
 let elLoadMultipleUser = document.getElementById("getMultipleUser")
 elLoadMultipleUser.addEventListener("click", function(){
     let userCount = document.getElementById("userCount")
     loadMultipleUser(userCount.value)
 })
 
+// function to call the api. by the specifiy number of user 
 function loadMultipleUser(userCount){
     let url = "https://randomuser.me/api/?results=" + userCount
     let temp = ""
